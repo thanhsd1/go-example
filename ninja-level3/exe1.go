@@ -7,6 +7,6 @@ import (
 func main() {
 
 	for i := 0; i <= 10000; i++ {
-		fmt.Printf(i)
+		fmt.Println(i)
 	}
 }
