@@ -8,4 +8,12 @@ func main() {
 	fmt.Println(x)
 	fmt.Println(x[1:])
 	fmt.Println(x[1:5]) //  ở đây có nghĩa là phần tử sau trừ cho phần tử trước. Đúng không vậy anh??
+
+	for i, v := range x {
+		fmt.Println(i, v)
+	}
+
+	for i := 0; i <= 4; i++ {
+		fmt.Println(i, x[i])
+	}
 }
