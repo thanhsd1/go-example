@@ -37,10 +37,31 @@ func main() {
 		p2.last: p2,
 	}
 
-	fmt.Println(m)
-
 	for k, v := range m {
-		fmt.Println(k, v)
+		fmt.Println(k)
+		fmt.Println(v.first)
+		fmt.Println(v.last)
+		for i, val := range v.favflavors {
+			fmt.Println(i, val)
+		}
+		fmt.Println("------")
+
 	}
 
 }
+
+/* Output
+Tran
+Thanh
+Tran
+0 cafe
+1 money
+2 rum and coke
+------
+Tran1
+Thanh1
+Tran1
+0 Milk
+1 Strawberrry
+2 Juice
+*/
