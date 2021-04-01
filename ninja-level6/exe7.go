@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+var x int
+
 func main() {
 
 	a := func() {
@@ -15,4 +17,8 @@ func main() {
 	}
 	a()
 	fmt.Printf("%T\n", a)
+
+	fmt.Println(x)
+	fmt.Printf("%T\n", x)
+
 }
