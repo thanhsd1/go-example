@@ -5,6 +5,7 @@ import (
 )
 
 var x int
+var g func()
 
 func main() {
 
@@ -20,5 +21,11 @@ func main() {
 
 	fmt.Println(x)
 	fmt.Printf("%T\n", x)
+
+	g = a
+	g()
+
+	fmt.Printf("Day la g %T\n", g)
+	fmt.Println("Done")
 
 }
