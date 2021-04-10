@@ -28,9 +28,15 @@ func main() {
 
 	fmt.Println(users)
 	bs, err := json.Marshal(users)
+
+	
 	if err != nil {
 		fmt.Println(err)
 
 	}
 	fmt.Println(string(bs))
 }
+
+
+
+test: git branch and git checkout
