@@ -26,5 +26,5 @@ func main() {
 
 	fmt.Println(people)
 	sort.Sort(ByAge(people))
-	fmt.Println(people)
+	fmt.Println(people) // em vẫn chưa hiểu thằng func less
 }
