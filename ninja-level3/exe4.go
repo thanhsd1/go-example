@@ -9,7 +9,7 @@ func main() {
 	for {
 
 		if id > 2021 {
-			break
+			break // vòng lặp dừng nếu id > 2021
 		}
 		fmt.Println(id)
 		id++
