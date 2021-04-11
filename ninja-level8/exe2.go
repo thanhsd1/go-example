@@ -24,4 +24,14 @@ func main() {
 	}
 	fmt.Println(people)
 
+	for i, person := range people {
+		fmt.Println("People", i)
+		fmt.Println("\t", person.First, person.Last, person.Age)
+		for _, saying := range person.Sayings {
+			fmt.Println("\t \t", saying)
+
+		}
+
+	}
+
 }
