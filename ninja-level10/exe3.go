@@ -4,29 +4,27 @@ import (
 	"fmt"
 )
 
-func main (){
-		c := gen()
-		receive(c)
+func main() {
+	c := gen()
+	receive(c)
 
-		fmt.Println("about to exit")
-}		
-func receive (<-chan int){
-		for v := range c {
-			fmt.Println(v)
-		}
-}		
-func gen (chan int){
-	gen := make(chan int)
-	go func (){
-		for i:= 0; i < 10; i++ {
-			c <- i
-	
-		} 
-	}()
-	close(c)
-
+	fmt.Println("about to exit")
 }
-return c
+func receive(c <-chan int) {
+	for v := range c {
+		fmt.Println(v)
+	}
+}
+func gen() chan int {
+	c := make(chan int)
+	go func() {
+		for i := 0; i < 10; i++ {
+			c <- i
 
+		}
+		close(c)
+
+	}()
+	return c
 
 }
