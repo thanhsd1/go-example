@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	cr := make(<-chan int)
+	cr := make(chan int)
 
 	go func() {
 		cr <- 42
