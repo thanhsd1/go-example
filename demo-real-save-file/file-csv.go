@@ -27,7 +27,7 @@ func main() {
 			age:       int(2),
 		}
 
-		fmt.Printf("%s %s  %v\n", user.firstName, user.lastName,
+		fmt.Printf("%s %s age is %v\n", user.firstName, user.lastName,
 			user.age)
 	}
 }
