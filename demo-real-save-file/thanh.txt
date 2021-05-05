@@ -1,0 +1,4 @@
+Ho va ten:  Tran Van Thanh
+Tuoi:  24
+Gioi tinh:  Nam
+Mssv:  12345678910
