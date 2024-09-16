@@ -17,6 +17,7 @@ func main() {
 	fmt.Println("-------")
 	fmt.Println(xs)
 	sort.Strings(xs)
-	fmt.Println(xs)
+	fmt.Println(xs) // Out put sort string nó ra là [Is My Name Thanh Tran] có vấn đề gi v a?
+
 
 }
